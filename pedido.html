@@ -6,28 +6,68 @@
     <title>Pedido</title>
     <style>
         :root{
-            --cor-fundo: #df8ccd;
-            --cor-borda: #000;
-            --cor-hover: #e0e0e0;
+            --cor-fundo: #F2B6C1;
+            --cor-fonte: red;
+            --cor-borda: #F294AD;
+            
         }
-        
+        @font-face {
+            font-family: 'darling';
+            src: url(fonte/Darling.ttf) format('opentype'),
+                 url(fonte/Darling.ttf) format('truetype');
+        }
+        @font-face{
+            font-family: 'hillos';
+            src: url(fonte/Hillos.otf) format('opentype'),
+                 url(fonte/Hillos.ttf) format('truetype');
+        }
         body {
+            color: var(--cor-fonte);
             background-color: var(--cor-fundo);
-           
+            display: inline-flex;
+            
+            font-family: 'darling';
+            font-size: 2em;
         }
-       
+       .caixa{justify-items: center;
+            background-color: white;
+            text-align: center;
+            border-radius: 15px;
+            padding: 20px;
+            margin: 50px;
+            text-align: center;
+            width: 400px;
+        }
+        button{
+            font-family:'Times New Roman', Times, serif;
+            font-size: 1em;
+            margin: 10px;
+            padding: 10px 40px;
+            font-size: 30px;
+            border: none;
+            border-radius: 20px;
+          
+        }
+        .sim{
+            background-color: green;
+            color: white;
+            display: inline-block;
+        }
+    .nao{
+            background-color: red;
+            color: white;
+            display: inline-block;
+        }
         
+      
+      
     </style>
 </head>
 <body>
-    <div class="pedido">
-        Você aceita namora comigo?
-    </div>
-    <div class="sim">
-        SIM
-    </div>
-    <div class="nao">
-        NÃO
-    </div>
+<div class="caixa">
+    <h1>Namora comigo? 💖</h1>
+    <button class="sim">Sim</button>
+    <button class="nao">Não</button>
+</div>
 </body>
 </html>

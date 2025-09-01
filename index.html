@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Namora comigo?</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: pink;
+    }
+    .caixa {
+      text-align: center;
+      background: white;
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    }
+    h1 {
+      margin-bottom: 20px;
+    }
+    button {
+      margin: 10px;
+      padding: 10px 20px;
+      font-size: 16px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+    .sim {
+      background: green;
+      color: white;
+    }
+    .nao {
+      background: red;
+      color: white;
+    }  
+     .nao:hover{
+            position: absolute;
+            top: calc(100% * (random()));
+            left: calc(100% * (random()));
+        }
+      
+  </style>
+</head>
+<body>
+  <div class="caixa">
+    <h1>Namora comigo? 💖</h1>
+    <button class="sim">Sim</button>
+    <button class="nao">Não</button>
+  </div>
+</body>
+</html>
+
+
